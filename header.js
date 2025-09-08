@@ -67,21 +67,6 @@ document.write(`<header id="xb-header-area" class="header-area is-sticky">
                   </a>
                 </div>
 
-                <!-- Mobile Search -->
-                <div class="xb-header-mobile-search xb-hide-xl">
-                  <form role="search" action="#" method="get">
-                    <input
-                      type="text"
-                      placeholder="Search..."
-                      name="s"
-                      class="search-field"
-                      aria-label="Search"
-                    />
-                    <button class="search-submit" type="submit">
-                      <i class="far fa-search"></i>
-                    </button>
-                  </form>
-                </div>
 
                 <!-- Mobile Navigation -->
                 <nav class="xb-header-nav" role="navigation" aria-label="Mobile Navigation">
@@ -140,47 +125,6 @@ document.write(`<header id="xb-header-area" class="header-area is-sticky">
 
         <!-- Right Header Area -->
         <div class="header-right ul_li">
-          <a class="header-search header-search-btn" href="javascript:void(0);" aria-label="Open Search">
-            <svg
-              width="18"
-              height="18"
-              viewBox="0 0 18 18"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-              role="img"
-              aria-hidden="true"
-            >
-              <path
-                d="M10.5 3.75H15"
-                stroke="#170006"
-                stroke-width="1.5"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              />
-              <path
-                d="M10.5 6H12.75"
-                stroke="#170006"
-                stroke-width="1.5"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              />
-              <path
-                d="M15.75 8.625C15.75 12.5625 12.5625 15.75 8.625 15.75C4.6875 15.75 1.5 12.5625 1.5 8.625C1.5 4.6875 4.6875 1.5 8.625 1.5"
-                stroke="#170006"
-                stroke-width="1.5"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              />
-              <path
-                d="M16.5 16.5L15 15"
-                stroke="#170006"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              />
-            </svg>
-            Search
-          </a>
 
           <div class="language_dropdown dropdown"></div>
         </div>
