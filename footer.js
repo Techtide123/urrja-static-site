@@ -86,7 +86,7 @@ document.write(` <footer class="footer bg_img pos-rel pt-20" data-background="as
         </div>
         <div class="footer-bottom pb-25 pt-25">
           <div class="copyright text-center">
-            <p>Copyright © 2025 <a href="index.html">Edubost</a>. All rights reserved.</p>
+            <p>Copyright © 2025 <a href="index.html">URJA ACADEMY</a>. All rights reserved.</p>
           </div>
         </div>
       </div>
