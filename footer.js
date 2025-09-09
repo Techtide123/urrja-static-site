@@ -66,7 +66,7 @@ document.write(` <footer class="footer bg_img pos-rel pt-20" data-background="as
                 <div class="footer-widget change-mr">
                   <h3 class="xb-item--title">Additional Links</h3>
                   <ul class="xb-item--links list-unstyled">
-                    <li><a href="#!">Certificate</a></li>
+                    <li><a href="team.html">Certificate</a></li>
                     <li><a href="#!">Terms & Condition</a></li>
                   </ul>
                 </div>

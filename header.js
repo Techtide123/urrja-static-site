@@ -7,22 +7,20 @@ if (!document.querySelector('link[href="assets/css/custom.css"]')) {
 }
 
 document.write(`<header id="xb-header-area" class="header-area is-sticky">
-  <!-- Header Top Bar -->
   <div class="header-top_wrap">
     <div class="container">
       <div class="header-top ul_li_between">
         <div class="xb-help_desk">
-          <img src="assets/img/icon/hero_top-icon.png" alt="Help Desk Icon" />
+          <img src="assets/img/icon/hero_top-icon.png" style="max-width: 70%;" alt="Help Desk Icon" />
           <p>Help Desk : <span>+91 8328888962</span></p>
         </div>
         <div class="xb-info">
           <ul class="ul_li align-items-end">
-            <li>Information For :</li>
-            <li><a href="#!">Students</a></li>
-            <li><a href="#!">Faculty</a></li>
-            <li><a href="#!">Alumni</a></li>
-            <li><a href="#!">Research</a></li>
-            <li><a href="#!">Community</a></li>
+            <li>Address:- </li>
+            <li> Ram Nagar,</li>
+            <li>Brahmapur,</li>
+            <li> Odisha , 760005  </li>
+           
           </ul>
         </div>
       </div>
