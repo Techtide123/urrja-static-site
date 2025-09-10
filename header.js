@@ -11,7 +11,7 @@ document.write(`<header id="xb-header-area" class="header-area is-sticky">
     <div class="container">
       <div class="header-top ul_li_between">
         <div class="xb-help_desk">
-          <img src="assets/img/icon/hero_top-icon.png" style="max-width: 70%;" alt="Help Desk Icon" />
+          <img  src="assets/img/icon/hero_top-icon.png" style="max-width: 70%;" alt="Help Desk Icon" />
           <p>Help Desk : <span>+91 8328888962</span></p>
         </div>
         <div class="xb-info">
@@ -34,7 +34,7 @@ document.write(`<header id="xb-header-area" class="header-area is-sticky">
         <!-- Logo -->
         <div class="header-logo">
           <a href="index.html">
-            <img src="assets/img/logo/logo.svg" alt="Website Logo" />
+            <img class="logoimage" src="assets/img/logo/logo.svg" alt="Website Logo" />
           </a>
         </div>
 
