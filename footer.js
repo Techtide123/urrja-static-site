@@ -50,6 +50,32 @@ document.write(` <footer class="footer clg-footer bg_img pos-rel" data-backgroun
                 </div>
             </div>
         </div>
+        <script>
+(function (w, d, s, u) {
+w.gbwawc = {
+url: u,
+options: {
+        waId: "+91 8328888962",
+        siteName: "Urja Acadamy",
+        siteTag: "Available",
+        siteLogo: "https://i.postimg.cc/fTc8zMf2/preloader.png",
+        widgetPosition: "LEFT",
+        triggerMessage: "Need any Help ",
+        welcomeMessage: "Hi there! How can we help you?",
+        brandColor: "#25D366",
+        messageText: "",
+        replyOptions: ['Room Booking','Room Photos','Others'],
+    },
+};
+var h = d.getElementsByTagName(s)[0],
+j = d.createElement(s);
+j.async = true;
+j.src = u + "/whatsapp-widget.min.js?_=" + Math.random();
+h.parentNode.insertBefore(j, h);
+})(window, document, "script", "https://waw.gallabox.com");
+</script>
+
+in the footer with their no and details color change
         <div class="footer-bottom pt-35 pb-35">
             <div class="copyright text-center">
                 <p>Copyright © 2024 <a href="index.html">urja acadamy</a>. All rights reserved.</p>
