@@ -8618,6 +8618,7 @@ body .mfp-wrap .mfp-container .mfp-content .mfp-close:hover::before, body .mfp-w
   padding-top: 1px; }
   @media (max-width: 991px) {
     .clg-footer_wrap {
+      padding-left: 0px;
       justify-content: center; } }
   .clg-footer_wrap .xb-item--details {
     max-width: 235px;
