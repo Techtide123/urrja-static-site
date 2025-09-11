@@ -46,7 +46,7 @@ document.write(`<header id="xb-header-area" class="header-area is-sticky">
                 <a href="index.html">Home</a>
               </li>
                 <li><a href="about.html">About us</a></li>
-                 <li><a href="team.html">Certification</a></li>
+                 <li><a href="certificate.html">Certification</a></li>
               <li><a href="admission.html">Admission</a></li>
               <li><a href="#!">Notes</a></li>
               <li><a href="contact.html">Contact us</a></li>
@@ -84,7 +84,7 @@ document.write(`<header id="xb-header-area" class="header-area is-sticky">
                       </a>
                     </li>
                     <li class="mobile-nav-item">
-                      <a href="team.html" class="mobile-nav-link">
+                      <a href="certificate.html" class="mobile-nav-link">
                         <i class="fas fa-certificate mobile-nav-icon"></i>
                         <span>Certification</span>
                       </a>
