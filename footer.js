@@ -74,8 +74,6 @@ j.src = u + "/whatsapp-widget.min.js?_=" + Math.random();
 h.parentNode.insertBefore(j, h);
 })(window, document, "script", "https://waw.gallabox.com");
 </script>
-
-in the footer with their no and details color change
         <div class="footer-bottom pt-35 pb-35">
             <div class="copyright text-center">
                 <p>Copyright © 2024 <a href="index.html">urja acadamy</a>. All rights reserved.</p>
