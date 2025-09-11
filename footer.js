@@ -74,9 +74,23 @@ j.src = u + "/whatsapp-widget.min.js?_=" + Math.random();
 h.parentNode.insertBefore(j, h);
 })(window, document, "script", "https://waw.gallabox.com");
 </script>
+
         <div class="footer-bottom pt-35 pb-35">
-            <div class="copyright text-center">
-                <p>Copyright © 2024 <a href="index.html">urja acadamy</a>. All rights reserved.</p>
+            <div class="container">
+                <div class="row align-items-center text-center text-md-start">
+                    <div class="col-md-4 mb-2 mb-md-0">
+                        <p class="mb-0" style="color: #aaa; font-size: 13px;">Copyright © 2025 <a href="index.html" style="color: #aaa;">urja acadamy</a>. All rights reserved.</p>
+                    </div>
+                    <div class="col-md-4 mb-2 mb-md-0" style="text-align: center;">
+                        <p class="mb-0" style="color: #aaa; font-size: 13px;">Powered By <a href="https://tripstar.co.in/index.html" target="_blank" style="color: #aaa;"><img src="https://tripstar.co.in/assets/my-img/logo.png" alt="Tripstar Logo" style="max-width: 70px; vertical-align: middle;"></a></p>
+                    </div>
+                    <div class="col-md-4 text-md-end">
+                        <ul class="d-flex justify-content-center justify-content-md-end list-unstyled gap-3 mb-0" style="font-size: 13px;">
+                            <li><a href="policy.html" style="color: #aaa;">Terms of Use</a></li>
+                            <li><a href="policy.html" style="color: #aaa;">Privacy Policy</a></li>
+                        </ul>
+                    </div>
+                </div>
             </div>
         </div>
     </footer>`);
