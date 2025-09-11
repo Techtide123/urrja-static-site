@@ -47,9 +47,10 @@ document.write(`<header id="xb-header-area" class="header-area is-sticky">
               </li>
                 <li><a href="about.html">About us</a></li>
                  <li><a href="certificate.html">Certification</a></li>
-              <li><a href="admission.html">Admission</a></li>
+              <li><a href="https://urrja-accademi.vercel.app/admission">Admission</a></li>
               <li><a href="#!">Notes</a></li>
               <li><a href="contact.html">Contact us</a></li>
+              <li><a href="https://urrja-accademi.vercel.app/admin/login">Admin Login</a></li>
             </ul>
           </nav>
 
@@ -90,7 +91,7 @@ document.write(`<header id="xb-header-area" class="header-area is-sticky">
                       </a>
                     </li>
                     <li class="mobile-nav-item">
-                      <a href="admission.html" class="mobile-nav-link">
+                      <a href="https://urrja-accademi.vercel.app/admission" class="mobile-nav-link">
                         <i class="fas fa-graduation-cap mobile-nav-icon"></i>
                         <span>Admission</span>
                       </a>
@@ -105,6 +106,12 @@ document.write(`<header id="xb-header-area" class="header-area is-sticky">
                       <a href="contact.html" class="mobile-nav-link">
                         <i class="fas fa-envelope mobile-nav-icon"></i>
                         <span>Contact us</span>
+                      </a>
+                    </li>
+                    <li class="mobile-nav-item">
+                      <a href="https://urrja-accademi.vercel.app/admin/login" class="mobile-nav-link">
+                        <i class="fas fa-sign-in-alt mobile-nav-icon"></i>
+                        <span>Admin Login</span>
                       </a>
                     </li>
                   </ul>
