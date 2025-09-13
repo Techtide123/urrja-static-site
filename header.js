@@ -6,20 +6,49 @@ if (!document.querySelector('link[href="assets/css/custom.css"]')) {
   document.head.appendChild(customCSS);
 }
 
-document.write(`<header id="xb-header-area" class="header-area is-sticky">
+document.write(`
+    <style>
+    .admin-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background-color: #781921;
+      color: white;
+      padding: 2px 10px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-family: Arial, sans-serif;
+      font-weight: 500;
+      transition: background-color 0.3s, transform 0.2s;
+    }
+
+    .admin-btn:hover {
+      background-color: #781921;
+      transform: scale(1.05);
+      color: white;
+    }
+
+    .admin-btn svg {
+      width: 20px;
+      height: 20px;
+      fill: white;
+    }
+  </style>
+  
+  <header id="xb-header-area" class="header-area is-sticky">
   <div class="header-top_wrap">
     <div class="container">
       <div class="header-top ul_li_between">
         <div class="xb-help_desk">
           <img  src="assets/img/icon/hero_top-icon.png" style="max-width: 70%;" alt="Help Desk Icon" />
-          <p>Help Desk : <span>+91 8328888962</span></p>
+          <p>Help Desk : <span style="font-size: 14px;">+91 8328888962</span></p>
         </div>
         <div class="xb-info">
           <ul class="ul_li align-items-end">
             <li>Address:- </li>
-            <li> Ram Nagar,</li>
-            <li>Brahmapur,</li>
-            <li> Odisha , 760005  </li>
+            <li style="font-size: 14px;"> Ram Nagar,</li>
+            <li style="font-size: 14px;">Brahmapur,</li>
+            <li style="font-size: 14px;"> Odisha , 760005  </li>
            
           </ul>
         </div>
@@ -48,10 +77,17 @@ document.write(`<header id="xb-header-area" class="header-area is-sticky">
                 <li><a href="about.html">About us</a></li>
                  <li><a href="certificate.html">Certification</a></li>
               <li><a href="https://urrja-accademi.vercel.app/admission">Admission</a></li>
-              <li><a href="#!">Notes</a></li>
+              <li><a href="https://urrja-accademi.vercel.app/notes">Notes</a></li>
               <li><a href="contact.html">Contact us</a></li>
-              <li><a href="https://urrja-accademi.vercel.app/admin/login">Admin Login</a></li>
+              <li> </li>
             </ul>
+             <a href="https://urrja-accademi.vercel.app/admin/login" class="admin-btn">
+              <!-- User Icon SVG -->
+           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+           <path d="M12 12c2.7 0 5-2.3 5-5s-2.3-5-5-5-5 2.3-5 5 2.3 5 5 5zm0 2c-3.3 0-10 1.7-10 5v3h20v-3c0-3.3-6.7-5-10-5z"/>
+             </svg>
+                Admin Login
+                 </a>
           </nav>
 
           <!-- Mobile Menu Wrapper -->

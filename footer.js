@@ -16,7 +16,7 @@ document.write(` <footer class="footer clg-footer bg_img pos-rel" data-backgroun
                         <li><a href="#!">How to apply</a></li>
                         <li><a href="https://urrja-accademi.vercel.app/admission">Admision</a></li>
                         <li><a href="#!">How to Download</a></li>
-                        <li><a href="#">Note</a></li>
+                        <li><a href="https://urrja-accademi.vercel.app/notes">Note</a></li>
                         <li><a href="about.html">About Us</a></li>
                         <li><a href="contact.html">Contact</a></li>
                     </ul>
