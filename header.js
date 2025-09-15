@@ -12,7 +12,7 @@ document.write(`
       display: inline-flex;
       align-items: center;
       gap: 8px;
-      background-color: #781921;
+      background-color: rgba(231, 21, 30,0.95);
       color: white;
       padding: 2px 10px;
       border-radius: 8px;
@@ -74,8 +74,9 @@ document.write(`
               <li class="" aria-haspopup="true" aria-expanded="false">
                 <a href="index.html">Home</a>
               </li>
-                <li><a href="about.html">About us</a></li>
-                 <li><a href="certificate.html">Certification</a></li>
+              <li><a href="about.html">About us</a></li>
+              <li><a href="academic.html">Academic</a></li>
+              <li><a href="gallery.html">Gallery</a></li>
               <li><a href="https://urrja-accademi.vercel.app/admission">Admission</a></li>
               <li><a href="https://urrja-accademi.vercel.app/notes">Notes</a></li>
               <li><a href="contact.html">Contact us</a></li>
@@ -124,6 +125,12 @@ document.write(`
                       <a href="certificate.html" class="mobile-nav-link">
                         <i class="fas fa-certificate mobile-nav-icon"></i>
                         <span>Certification</span>
+                      </a>
+                    </li>
+                     <li class="mobile-nav-item">
+                      <a href="gallery.html" class="mobile-nav-link">
+                        <i class="fas fa-image mobile-nav-icon"></i>
+                        <span>Our Photo</span>
                       </a>
                     </li>
                     <li class="mobile-nav-item">
