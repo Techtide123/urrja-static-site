@@ -1,96 +1,137 @@
-document.write(` <footer class="footer clg-footer bg_img pos-rel" data-background="assets/img/bg/footer-bg02.jpg">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-xl-9 col-lg-11 text-center">
-                    <div class="clg-footer-cta">
-                        <ul class="xb-contact ul_li list-unstyled">
-                            <li>+91 8328888962 <span class="ml-10"><img src="assets/img/icon/calling-icon01.png" alt=""></span></li>
-                            <li><span class="mr-10"><img src="assets/img/icon/email01.svg" alt=""></span>urjaacademy@gmail.com</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <div class="clg-footer-main">
-                <div class="clg-footer_widget mb-70">
-                    <ul class="xb-links list-unstyled ul_li_between">
-                        <li><a href="#!">How to apply</a></li>
-                        <li><a href="https://urrja-accademi.vercel.app/admission">Admision</a></li>
-                        <li><a href="#!">How to Download</a></li>
-                        <li><a href="https://urrja-accademi.vercel.app/notes">Note</a></li>
-                        <li><a href="about.html">About Us</a></li>
-                        <li><a href="contact.html">Contact</a></li>
-                    </ul>
-                </div>
-            </div>   
-        </div>
-        <div class="clg-footer-newsletter">
-            <div class="container">
-                <div class="clg-footer_wrap ul_li">
-                    <div class="xb-item--details mt-20">
-                        <p>Back side of samrat hotel Ananta Nagar Street, 1st Ln, Tata Benz Square, extension, Ram Nagar, Brahmapur, Odisha 760005</p>
-                    </div>
-                    <div class="xb-item--email mt-20">  
-                       <div class="header-logo">
-          <a href="index.html">
-            <img class="logoimage" src="assets/img/logo/logo.svg" alt="Website Logo" />
-          </a>
-        </div>
-                    </div>
-                    <div class="xb-item--meta mt-20">
-                        <span>Social media</span>
-                        <ul class="xb-item--social_link ul_li mt-15">
-                            <li><a href="#!"><i class="fab fa-facebook-f"></i></a></li>
-                            <li><a href="#!"><svg width="16" height="16" viewBox="0 0 16 16" fill="none"        xmlns="http://www.w3.org/2000/svg">
-                                <path d="M9.52217 6.77491L15.4785 0H14.0671L8.89516 5.88256L4.76437 0H0L6.24656 8.89547L0 16H1.41155L6.87321 9.78782L11.2356 16H16L9.52183 6.77491H9.52217ZM7.58887 8.97384L6.95596 8.08805L1.92015 1.03974H4.0882L8.15216 6.72795L8.78507 7.61374L14.0677 15.0075H11.8997L7.58887 8.97418V8.97384Z" fill="white" />
-                              </svg></a></li>
-                            <li><a href="#!"><i class="fab fa-linkedin-in"></i></a></li>
-                            <li><a href="#!"><i class="fab fa-instagram"></i></a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <script>
-(function (w, d, s, u) {
-w.gbwawc = {
-url: u,
-options: {
-        waId: "+91 8328888962",
-        siteName: "Urja Acadamy",
-        siteTag: "Available",
-        siteLogo: "https://i.postimg.cc/fTc8zMf2/preloader.png",
-        widgetPosition: "LEFT",
-        triggerMessage: "Need any Help ",
-        welcomeMessage: "Hi there! How can we help you?",
-        brandColor: "#25D366",
-        messageText: "",
-        replyOptions: ['Room Booking','Room Photos','Others'],
-    },
-};
-var h = d.getElementsByTagName(s)[0],
-j = d.createElement(s);
-j.async = true;
-j.src = u + "/whatsapp-widget.min.js?_=" + Math.random();
-h.parentNode.insertBefore(j, h);
-})(window, document, "script", "https://waw.gallabox.com");
-</script>
+document.write(`
 
-        <div class="footer-bottom pt-35 pb-35">
-            <div class="container">
-                <div class="row align-items-center text-center text-md-start">
-                    <div class="col-md-4 mb-2 mb-md-0">
-                        <p class="mb-0" style="color: #aaa; font-size: 13px;">Copyright © 2025 <a href="index.html" style="color: #aaa;">urja acadamy</a>. All rights reserved.</p>
-                    </div>
-                    <div class="col-md-4 mb-2 mb-md-0" style="text-align: center;">
-                        <p class="mb-0" style="color: #aaa; font-size: 13px;">Powered By <a href="https://tripstar.co.in/index.html" target="_blank" style="color: #aaa;"><img src="https://tripstar.co.in/assets/my-img/logo.png" alt="Tripstar Logo" style="max-width: 70px; vertical-align: middle;"></a></p>
-                    </div>
-                    <div class="col-md-4 text-md-end">
-                        <ul class="d-flex justify-content-center justify-content-md-end list-unstyled gap-3 mb-0" style="font-size: 13px;">
-                            <li><a href="policy.html" style="color: #aaa;">Terms of Use</a></li>
-                            <li><a href="policy.html" style="color: #aaa;">Privacy Policy</a></li>
-                        </ul>
+    <style>
+        .xb-footer-main .footer-widget .xb-item--links li a {
+        font-size: 14px;
+        }
+        .xb-footer-main .footer-widget .xb-item--details {
+        font-size: 14px;
+        }
+        .footer-bottom .copyright p {
+        font-size: 14px;
+        }
+    </style>
+    
+            <!-- footer strt -->
+        <footer class="footer bg_img pos-rel " data-background="assets/img/bg/footer-bg.jpg">
+            <div class="xb-footer-wrap">
+                <div class="xb-footer-main pt-40 pb-40">
+                    <div class="container">
+                        <div class="row mt-none-30">
+                            <div class="col-xl-3 col-lg-4 col-md-6 mt-30">
+                                <div class="footer-widget mt-10">
+                                    <div class="xb-item--logo mb-30"><a href="#!"><img src="assets/img/logo/logo.svg"
+                                                alt=""></a></div>
+                                    <span class="xb-item--details">
+                                        Back side of Samrat Hotel, Ananta Nagar Street, 1st Ln, Tata Benz Square
+                                        Extension, Ram Nagar, Brahmapur, Odisha 760005
+                                    </span>
+
+                                    <div class="xb-item--meta mt-20">
+                                        <span>Social media</span>
+                                        <ul class="xb-item--social_link ul_li">
+                                            <li><a href="#!"><i class="fab fa-facebook-f"></i></a></li>
+                                            <li><a href="#!"><svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path
+                                                            d="M9.52217 6.77491L15.4785 0H14.0671L8.89516 5.88256L4.76437 0H0L6.24656 8.89547L0 16H1.41155L6.87321 9.78782L11.2356 16H16L9.52183 6.77491H9.52217ZM7.58887 8.97384L6.95596 8.08805L1.92015 1.03974H4.0882L8.15216 6.72795L8.78507 7.61374L14.0677 15.0075H11.8997L7.58887 8.97418V8.97384Z"
+                                                            fill="white" />
+                                                    </svg></a></li>
+                                            <li><a href="#!"><i class="fab fa-linkedin-in"></i></a></li>
+                                            <li><a href="#!"><i class="fab fa-instagram"></i></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-2 col-lg-4 col-md-6 mt-30">
+                                <div class="footer-widget">
+                                    <h3 class="xb-item--title">Admissions</h3>
+                                    <ul class="xb-item--links list-unstyled">
+                                        <li><a href="#!">How to apply</a></li>
+                                        <li><a href="#!">Schedule</a></li>
+                                        <li><a href="#!">Procedure</a></li>
+                                        <li><a href="#!">Eligibility</a></li>
+                                        <li><a href="#!">Fee structure</a></li>
+                                        <li><a href="#!">Scholarships</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-xl-2 col-lg-4 col-md-6 mt-30">
+                                <div class="footer-widget chng-mr">
+                                    <h3 class="xb-item--title">Quick Links</h3>
+                                    <ul class="xb-item--links list-unstyled">
+                                        <li><a href="about.html#mission-vission">Mission & Vision</a></li>
+                                        <li><a href="index.html">Home</a></li>
+                                        <li><a href="https://urrja-accademi.vercel.app/notes">Notes</a></li>
+                                        <li><a href="about.html">About Us</a></li>
+                                        <li><a href="contact.html">Contact Us</a></li>
+                                        <li><a href="https://urrja-accademi.vercel.app/admission">Admissions</a></li>
+
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-xl-3 col-lg-4 col-md-6 mt-30">
+                                <div class="footer-widget change-mr">
+                                    <h3 class="xb-item--title">Additional Links</h3>
+                                    <ul class="xb-item--links list-unstyled">
+                                        <li><a href="#!">Our History</a></li>
+                                        <li><a href="#!">Staff and Faculty</a></li>
+                                        <li><a href="#!">Why Choose Us</a></li>
+                                        <li><a href="#!">Explore Courses</a></li>
+                                        <li><a href="#!">Gallery</a></li>
+                                        <li><a href="#!">Terms & Condition</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-xl-2 col-lg-4 col-md-6 mt-30">
+                                <div class="footer-widget">
+                                    <ul class="xb-item--links-btn list-unstyled">
+                                        <li><a class="thm-btn"
+                                                href="https://urrja-accademi.vercel.app/admission">applying</a></li>
+                                        <li><a class="thm-btn" href="#!">visiting</a></li>
+                                        <li><a class="thm-btn" href="#!">careers</a></li>
+                                        <li><a class="thm-btn" href="contact.html">contact</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
+                <div class="footer-bottom  ">
+                    <div class="copyright text-center"
+                        style="display: flex;justify-content: space-around;align-items: center; ">
+                        <p>Copyright © 2025 <a href="index.html">Urja Acadamy</a>|| All rights reserved.</p>
+                        <p>Powerd by <a href="https://tripstar.co.in"><img
+                                    src="https://tripstar.co.in/assets/my-img/logo.png" alt=""
+                                    style="height: 70px; width: 70px;object-fit: contain;"></a></p>
+                    </div>
+
+                </div>
             </div>
-        </div>
-    </footer>`);
+        </footer>
+        <script>
+            (function (w, d, s, u) {
+                w.gbwawc = {
+                    url: u,
+                    options: {
+                        waId: "+91 8328888962",
+                        siteName: "Urja Acadamy",
+                        siteTag: "Available",
+                        siteLogo: "https://i.postimg.cc/fTc8zMf2/preloader.png",
+                        widgetPosition: "LEFT",
+                        triggerMessage: "Need any Help ",
+                        welcomeMessage: "Hi there! How can we help you?",
+                        brandColor: "#25D366",
+                        messageText: "",
+                        replyOptions: ['Room Booking', 'Room Photos', 'Others'],
+                    },
+                };
+                var h = d.getElementsByTagName(s)[0],
+                    j = d.createElement(s);
+                j.async = true;
+                j.src = u + "/whatsapp-widget.min.js?_=" + Math.random();
+                h.parentNode.insertBefore(j, h);
+            })(window, document, "script", "https://waw.gallabox.com");
+        </script>
+        <!-- footer end -->
+    `)
