@@ -80,6 +80,7 @@ document.write(`
                                         <ul class="submenu">
                                             <li><a href="about.html#history">Our History</a></li>
                                             <li><a href="about.html#mission-vission">Mission & Vision</a></li>
+                                            <li><a href="about.html#Our-Core-Values">Our Core Values</a></li>
                                             <li><a href="about.html#explore">Explore us</a></li>
                                             <li><a href="about.html#whyus">Why Choose Us</a></li>
                                         </ul>
@@ -235,4 +236,4 @@ document.write(`
         </div>
         <div class="body-overlay"></div>
         <!-- header search end -->
-  `)
+  `);
