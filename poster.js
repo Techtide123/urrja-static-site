@@ -4,13 +4,14 @@ document.addEventListener("DOMContentLoaded", function () {
     <!-- Small fixed image -->
     <img src="assets/img/poster small.jpeg" alt="Poster Thumbnail" class="small-image" id="openBtn">
 
+    <!-- Help bubble on right -->
+    <div class="help-text">Our Achievement</div>
+
     <!-- Fullscreen overlay -->
     <div class="overlay" id="overlay">
         <button class="close-btn" id="closeBtn">✖ Close</button>
         <img src="assets/img/poster.jpeg" alt="Poster Full Image">
     </div>
-
-
   `;
 
   // --- CSS styles ---
@@ -30,6 +31,34 @@ document.addEventListener("DOMContentLoaded", function () {
         z-index: 1000;
       }
 
+      /* Help bubble on right side of image */
+      .help-text {
+        position: fixed;
+        bottom: 115px; /* align vertically with image */
+        left: 85px;    /* to the right of image */
+        background: #ffffff;
+        color: #333;
+        padding: 8px 14px;
+        border-radius: 20px;
+        font-size: 14px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        white-space: nowrap;
+        z-index: 1001;
+        cursor: default;
+      }
+
+      /* Small triangle pointer */
+      .help-text::before {
+        content: "";
+        position: absolute;
+        left: -8px;
+        top: 50%;
+        transform: translateY(-50%);
+        border-width: 8px;
+        border-style: solid;
+        border-color: transparent #ffffff transparent transparent;
+      }
+
       /* Fullscreen overlay */
       .overlay {
         position: fixed;
@@ -37,7 +66,7 @@ document.addEventListener("DOMContentLoaded", function () {
         left: 0;
         width: 100%;
         height: 100%;
-        background: rgba(0, 0, 0, 0.8); /* black transparent */
+        background: rgba(0, 0, 0, 0.8);
         display: flex;
         align-items: center;
         justify-content: center;
@@ -85,8 +114,8 @@ document.addEventListener("DOMContentLoaded", function () {
   // Insert styles into head
   document.head.insertAdjacentHTML("beforeend", posterStyles);
 
-  // Insert HTML elements before .body_wrap
-  const bodyWrap = document.querySelector(".body_wrap");
+  // Insert HTML elements before .body_wrap (or at start if not present)
+  const bodyWrap = document.querySelector(".body_wrap") || document.body;
   bodyWrap.insertAdjacentHTML("beforebegin", posterElements);
 
   // --- Event Listeners ---
