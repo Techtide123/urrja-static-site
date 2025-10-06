@@ -90,6 +90,27 @@
             background: #f0f0f0;
         }
     </style>
+    <style>
+        #typewriter-text {
+            display: inline-block;
+            white-space: pre-wrap;
+            overflow: hidden;
+            animation: fadeIn 1s ease;
+            transition: all 0.3s ease-in-out;
+        }
+
+        /* Optional: smooth fade-in effect for each character */
+        @keyframes fadeIn {
+            from {
+                opacity: 0.6;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
+    </style>
+
 </head>
 
 <body>
@@ -124,13 +145,15 @@
                     <div class="container">
                         <div class="hero__content-wrap text-center pt-55">
                             <div class="section-title clr-white">
-                                <span class="sub-title wow fadeInUp" data-wow-delay="0ms"
-                                    data-wow-duration=".6s">Welcome to University</span>
-                                <h1 class="title wow fadeInUp" data-wow-delay="150ms" data-wow-duration=".6s">URJA
-                                    ACADEMY
-                                    <br> Pathway to Success
+                                <span class="sub-title wow fadeInUp" data-wow-delay="0ms" data-wow-duration=".6s">
+                                    Welcome to University
+                                </span>
+
+                                <h1 class="title wow fadeInUp" data-wow-delay="150ms" data-wow-duration=".6s">
+                                    <span id="typewriter-text"></span>
                                 </h1>
                             </div>
+
                             <div class="xb-hero-img">
                                 <img src="assets/img/hero/hero_img01.png" alt="">
                             </div>
@@ -184,21 +207,74 @@
                 </div>
             </div>
             <!-- hero btn end -->
+
+
+            <section class="about hs-about pt-70 pb-70 pos-rel">
+                <div class="container">
+                    <div class="row align-items-center ">
+                        <div class="col-lg-6">
+                            <div class="hs-about_left mt-20">
+                                <div class="about-img wow skewIn" style="visibility: visible;">
+                                    <img src="assets/img/campus/campus-img02.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="hs-about-right ml-70 mt-20 wow fadeInLeft" data-wow-delay="200ms"
+                                data-wow-duration=".6s"
+                                style="visibility: visible; animation-duration: 0.6s; animation-delay: 200ms; animation-name: fadeInLeft;">
+                                <div class="section-title mb-20">
+                                    <span class="sub-title">About Us</span>
+                                    <h1 class="title">Urja Academy – Skill Based Learning</h1>
+
+                                    <p class="hs-content mt-25">
+                                        Founded in 2015, URJA ACADEMY provides flexible, skill-based online programs
+                                        that equip learners with
+                                        practical, in-demand skills for a competitive future.
+                                    </p>
+
+
+                                </div>
+                                <ul class="xb-item--list list-unstyled">
+                                    <li>Modern, skill-based online learning.</li>
+                                    <li>Flexible and affordable training programs.</li>
+                                    <li>Trusted by thousands of learners since 2015.</li>
+                                </ul>
+                                <div class="xb-btn mt-35">
+                                    <a class="thm-btn thm-btn--stroke-black hover-2" href="contact.html">
+                                        Get In Touch
+                                        <span>
+                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M22 4.84993V16.7399C22 17.7099 21.21 18.5999 20.24 18.7199L19.93 18.7599C18.29 18.9799 15.98 19.6599 14.12 20.4399C13.47 20.7099 12.75 20.2199 12.75 19.5099V5.59993C12.75 5.22993 12.96 4.88993 13.29 4.70993C15.12 3.71993 17.89 2.83993 19.77 2.67993H19.83C21.03 2.67993 22 3.64993 22 4.84993Z"
+                                                    fill="#170006"></path>
+                                                <path
+                                                    d="M10.71 4.70993C8.87999 3.71993 6.10999 2.83993 4.22999 2.67993H4.15999C2.95999 2.67993 1.98999 3.64993 1.98999 4.84993V16.7399C1.98999 17.7099 2.77999 18.5999 3.74999 18.7199L4.05999 18.7599C5.69999 18.9799 8.00999 19.6599 9.86999 20.4399C10.52 20.7099 11.24 20.2199 11.24 19.5099V5.59993C11.24 5.21993 11.04 4.88993 10.71 4.70993ZM4.99999 7.73993H7.24999C7.65999 7.73993 7.99999 8.07993 7.99999 8.48993C7.99999 8.90993 7.65999 9.23993 7.24999 9.23993H4.99999C4.58999 9.23993 4.24999 8.90993 4.24999 8.48993C4.24999 8.07993 4.58999 7.73993 4.99999 7.73993ZM7.99999 12.2399H4.99999C4.58999 12.2399 4.24999 11.9099 4.24999 11.4899C4.24999 11.0799 4.58999 10.7399 4.99999 10.7399H7.99999C8.40999 10.7399 8.74999 11.0799 8.74999 11.4899C8.74999 11.9099 8.40999 12.2399 7.99999 12.2399Z"
+                                                    fill="#170006"></path>
+                                            </svg>
+                                        </span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </section>
             <!--about-->
-            <section class="mission-vission z-1 pos-rel pt-110">
+            <section class="mission-vission z-1 pos-rel pt-70 pb-130">
                 <div class="mission-vission-bg" data-background="assets/img/bg/vm_bg.jpg"></div>
                 <div class="container">
                     <div class="row justify-content-center">
                         <div class="col-lg-8">
                             <div class="section-title text-center mb-65">
                                 <h2 class="title mb-15">our mission and vision</h2>
-                                <p style="text-align: justify;">Mission is to empower individuals through high-quality,
+                                <p style="text-align: center;">Mission is to empower individuals through high-quality,
                                     skill-based online education,
                                     enabling
-                                    them to learn, grow, and succeed in their careers. <br> Vision is to become a
-                                    leading platform for accessible and innovative online learning, bridging the gap
-                                    between education and employment by offering industry-relevant, short-term
-                                    certification courses that prepare learners for real-world challenges.
+                                    them to learn, grow, and succeed in their careers.
                                 </p>
                             </div>
                         </div>
@@ -272,12 +348,14 @@
             <!--end about-->
 
             <!-- core values start -->
-            <section class="core-values-section section_space pt-10" id="Our-Core-Values">
+            <section class="core-values-section section_space  pb-70 " id="Our-Core-Values"
+                style="margin-top: -88px; padding-top: 70px; padding-bottom: 70px;">
                 <div class="container">
                     <div class="row justify-content-center">
                         <div class="col-xl-7 col-lg-8">
                             <div class="section-title text-center mb-50">
-                                <h2 class="mb-30">Our Core Values</h2>
+                                <!-- <h2 class="mb-30">Our Core Values</h2> -->
+                                <h2 class="title mb-15">Our Core Values</h2>
                             </div>
                         </div>
                     </div>
@@ -410,8 +488,8 @@
             </section>
             <!-- core values end -->
             <!-- department section start  -->
-            <section class="department pt-90 pb-200 pos-rel">
-                <section class="team pt-40 pb-120" data-bg-color="#F1F1E9">
+            <section class="department pt-30 pb-140 pos-rel">
+                <section class="team pt-30 pb-140" data-bg-color="#F1F1E9">
                     <div class="container">
                         <div class="section-title text-center mb-60">
                             <span class="sub-title">Our Honorable Teacher</span>
@@ -612,7 +690,7 @@
 
 
             <!-- campus section start  -->
-            <section class="campus pos-rel bg_img z-1 pt-100 pb-200" data-background="assets/img/bg/campus-bg.jpg">
+            <section class="campus pos-rel bg_img z-1 pt-70 pb-70 mt-20" data-background="assets/img/bg/campus-bg.jpg">
                 <div class="section-title mb-60 text-center">
                     <span class="sub-title">Our Campus Life</span>
                     <h1 class="title">Our Campus Life</h1>
@@ -689,9 +767,9 @@
             <!-- campus section end  -->
 
             <!-- testimonial section start  -->
-            <section class="testimonial pt-120 pb-120 pos-rel">
+            <section class="testimonial pt-60  pos-rel">
                 <div class="container">
-                    <div class="row align-items-center mt-none-30">
+                    <div class="row align-items-center mt-none-30" style="padding-bottom: 10px;">
                         <div class="col-lg-6 mt-30">
                             <div class="xb-testimonial-left pos-rel wow fadeInLeft" data-wow-delay="0ms"
                                 data-wow-duration=".6s">
@@ -770,7 +848,8 @@
                                                 <div class="xb-item--quote mb-35">
                                                     <img src="assets/img/icon/qua.png" alt="">
                                                 </div>
-                                                <p class="xb-item--content" style="text-align: justify;">"Urja Academy
+                                                <p class="xb-item--content"
+                                                    style="text-align: justify;font-size: 19px;">"Urja Academy
                                                     is not just an institute rather its a wonderful organisation which
                                                     is providing excellent courses and inbuilding academics and
                                                     positions. Santosh Sir is irreplaceable and vibrant in each and
@@ -788,7 +867,8 @@
                                                 <div class="xb-item--quote mb-35">
                                                     <img src="assets/img/icon/qua.png" alt="">
                                                 </div>
-                                                <p class="xb-item--content" style="text-align: justify;">"I feel truly
+                                                <p class="xb-item--content"
+                                                    style="text-align: justify;font-size: 19px;">"I feel truly
                                                     grateful and privileged to be a part of this institution. Our
                                                     college has provided me not just academic excellence, but also
                                                     opportunities for holistic growth and personal development. With
@@ -807,7 +887,8 @@
                                                 <div class="xb-item--quote mb-35">
                                                     <img src="assets/img/icon/qua.png" alt="">
                                                 </div>
-                                                <p class="xb-item--content" style="text-align: justify;">"ଉର୍ଜା
+                                                <p class="xb-item--content"
+                                                    style="text-align: justify;font-size: 19px;">"ଉର୍ଜା
                                                     ଏକାଡେମୀରେ ମୋର B.Ed ଯାତ୍ରା ମାତ୍ର ଏକ ଶିକ୍ଷାନୁଷ୍ଠାନର ପାଠାଶାଳା ନୁହେଁ,
                                                     ବରଂ ଏକ ଆତ୍ମଜ୍ଞାନର ସୁନ୍ଦର ପରିକ୍ରମା।
                                                     ଏଠାରେ ଶିକ୍ଷକମାନଙ୍କର ଅସୀମ ସହନଶୀଳତା, ଜ୍ଞାନର ଗଭୀରତା ଓ ପ୍ରତିଟି ପାଠରେ
@@ -830,7 +911,8 @@
                                                 <div class="xb-item--quote mb-35">
                                                     <img src="assets/img/icon/qua.png" alt="">
                                                 </div>
-                                                <p class="xb-item--content" style="text-align: justify;">"I recently
+                                                <p class="xb-item--content"
+                                                    style="text-align: justify;font-size: 19px;">"I recently
                                                     completed my B.Ed program at this esteemed institution URJA ACADEMY,
                                                     and I must say that it was a truly enriching experience. The
                                                     expertise and dedication of Santosh sir played a significant role in
@@ -854,7 +936,8 @@
                                                 <div class="xb-item--quote mb-35">
                                                     <img src="assets/img/icon/qua.png" alt="">
                                                 </div>
-                                                <p class="xb-item--content" style="text-align: justify;">"It is my
+                                                <p class="xb-item--content"
+                                                    style="text-align: justify;font-size: 19px;">"It is my
                                                     honour to express my heartfelt gratitude and reflect upon my journey
                                                     with URJA Academy. I vividly remember the day I first met Santosh
                                                     Sir and made the decision to embark on my B.Ed. journey for the
@@ -888,7 +971,8 @@
                                                 <div class="xb-item--quote mb-35">
                                                     <img src="assets/img/icon/qua.png" alt="">
                                                 </div>
-                                                <p class="xb-item--content" style="text-align: justify;">"I'm part of
+                                                <p class="xb-item--content"
+                                                    style="text-align: justify;font-size: 19px;">"I'm part of
                                                     the 2023-2025 batch pursuing my B.Ed degree at URJA Academy, and I
                                                     must say it was an excellent experience! The academy provided
                                                     top-notch guidance and support throughout the course. The faculty
@@ -907,7 +991,8 @@
                                                 <div class="xb-item--quote mb-35">
                                                     <img src="assets/img/icon/qua.png" alt="">
                                                 </div>
-                                                <p class="xb-item--content" style="text-align: justify;">"I'm part of
+                                                <p class="xb-item--content"
+                                                    style="text-align: justify;font-size: 19px;">"I'm part of
                                                     the 2023-2025 batch pursuing my B.Ed degree at URJA Academy, and I
                                                     must say it was an excellent experience! The academy provided
                                                     top-notch guidance and support throughout the course. The faculty
@@ -926,7 +1011,8 @@
                                                 <div class="xb-item--quote mb-35">
                                                     <img src="assets/img/icon/qua.png" alt="">
                                                 </div>
-                                                <p class="xb-item--content" style="text-align: justify;">"Hello
+                                                <p class="xb-item--content"
+                                                    style="text-align: justify;font-size: 19px;">"Hello
                                                     everyone,
                                                     I am an alumni of BEd (2020-2022) through Santosh sir. Urja academy
                                                     helped me with my BEd, Santosh sir provided us both offline and
@@ -948,7 +1034,8 @@
                                                 <div class="xb-item--quote mb-35">
                                                     <img src="assets/img/icon/qua.png" alt="">
                                                 </div>
-                                                <p class="xb-item--content" style="text-align: justify;">"Hello everyone
+                                                <p class="xb-item--content"
+                                                    style="text-align: justify;font-size: 19px;">"Hello everyone
                                                     I am Sonali Mahapatra from Berhampur. Once i was very tensed
                                                     regarding the B.ed joining and i did not know which institute should
                                                     i trust completely. Then once by the recommodation one of my close
@@ -978,7 +1065,8 @@
                                                 <div class="xb-item--quote mb-35">
                                                     <img src="assets/img/icon/qua.png" alt="">
                                                 </div>
-                                                <p class="xb-item--content" style="text-align: justify;">"I would like
+                                                <p class="xb-item--content"
+                                                    style="text-align: justify;font-size: 19px;">"I would like
                                                     to share my experience with Urja Academy, Berhampur, Odisha. It is a
                                                     trusted counselling centre for the B.Ed course, approved by NCTE in
                                                     various universities of Andhra Pradesh. The Director of Urja
@@ -1006,6 +1094,9 @@
                 </div>
             </section>
             <!-- testimonial section end  -->
+
+
+
 
         </main>
         <!-- main area end  -->
@@ -1094,6 +1185,33 @@
             });
         });
     </script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const text = "URJA ACADEMY\nPathway to Success";
+            const typewriterElement = document.getElementById("typewriter-text");
+            let index = 0;
+
+            function typeEffect() {
+                if (index < text.length) {
+                    const char = text.charAt(index);
+                    typewriterElement.innerHTML += (char === "\n") ? "<br>" : char;
+                    index++;
+                    setTimeout(typeEffect, 180);
+                } else {
+                    // Pause for a moment before restarting
+                    setTimeout(() => {
+                        typewriterElement.innerHTML = ""; // Clear the text
+                        index = 0; // Reset index
+                        typeEffect(); // Restart typing
+                    }, 2000); // 2 seconds pause before loop
+                }
+            }
+
+            typeEffect();
+        });
+    </script>
+
+
     <script src="assets/js/wow.min.js"></script>
     <script src="assets/js/appear.js"></script>
     <script src="assets/js/odometer.min.js"></script>

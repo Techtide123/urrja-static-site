@@ -83,6 +83,7 @@ document.write(`
                                             <li><a href="about.html#Our-Core-Values">Our Core Values</a></li>
                                             <li><a href="about.html#explore">Explore us</a></li>
                                             <li><a href="about.html#whyus">Why Choose Us</a></li>
+                                            <li><a href="about.html#director">Director’s Message</a></li>
                                         </ul>
                                     </li>
                                     <li class="menu-item-has-children">
@@ -96,9 +97,9 @@ document.write(`
                                     <li class="menu-item-has-children">
                                         <a href="academic.html">Examination</a>
                                         <ul class="submenu">
-                                            <li><a href="academic.html#courses">Syllabus</a></li>
-                                            <li><a href="academic.html#affiliation">Question Bank</a></li>
-                                            <li><a href="academic.html#teams">Results</a></li>
+                                            <li><a href="academic.html#syllabus">Syllabus</a></li>
+                                            <li><a href="academic.html#questionbank">Question Bank</a></li>
+                                            <li><a href="academic.html#result">Results</a></li>
                                         </ul>
                                     </li>
                                     <li><a href="https://urrja-accademi.vercel.app/admission">Admission</a></li>
