@@ -1,64 +1,16 @@
 document.addEventListener("DOMContentLoaded", function () {
   // --- HTML elements ---
-  const posterElements = `
-    <!-- Small fixed image -->
-    <img src="assets/img/poster small.jpeg" alt="Poster Thumbnail" class="small-image" id="openBtn">
-
-    <!-- Help bubble on right -->
-    <div class="help-text">Our Achievement</div>
-
+  const popupElements = `
     <!-- Fullscreen overlay -->
-    <div class="overlay" id="overlay">
+    <div class="overlay active" id="overlay">
         <button class="close-btn" id="closeBtn">✖ Close</button>
         <img src="assets/img/poster.jpeg" alt="Poster Full Image">
     </div>
   `;
 
   // --- CSS styles ---
-  const posterStyles = `
+  const popupStyles = `
     <style>
-      /* Small image button fixed on the left */
-      .small-image {
-        position: fixed;
-        bottom: 100px;
-        left: 20px;
-        width: 55px;
-        height: 80px;
-        object-fit: cover;
-        cursor: pointer;
-        border-radius: 8px;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-        z-index: 1000;
-      }
-
-      /* Help bubble on right side of image */
-      .help-text {
-        position: fixed;
-        bottom: 115px; /* align vertically with image */
-        left: 85px;    /* to the right of image */
-        background: #ffffff;
-        color: #333;
-        padding: 8px 14px;
-        border-radius: 20px;
-        font-size: 14px;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-        white-space: nowrap;
-        z-index: 1001;
-        cursor: default;
-      }
-
-      /* Small triangle pointer */
-      .help-text::before {
-        content: "";
-        position: absolute;
-        left: -8px;
-        top: 50%;
-        transform: translateY(-50%);
-        border-width: 8px;
-        border-style: solid;
-        border-color: transparent #ffffff transparent transparent;
-      }
-
       /* Fullscreen overlay */
       .overlay {
         position: fixed;
@@ -66,7 +18,7 @@ document.addEventListener("DOMContentLoaded", function () {
         left: 0;
         width: 100%;
         height: 100%;
-        background: rgba(0, 0, 0, 0.8);
+        background: rgba(0, 0, 0, 0.85);
         display: flex;
         align-items: center;
         justify-content: center;
@@ -76,13 +28,13 @@ document.addEventListener("DOMContentLoaded", function () {
         z-index: 9999;
       }
 
-      /* Active state shows the overlay */
+      /* Show popup when active */
       .overlay.active {
         visibility: visible;
         opacity: 1;
       }
 
-      /* Full image inside overlay */
+      /* Full image */
       .overlay img {
         max-width: 90%;
         max-height: 90%;
@@ -111,26 +63,23 @@ document.addEventListener("DOMContentLoaded", function () {
     </style>
   `;
 
-  // Insert styles into head
-  document.head.insertAdjacentHTML("beforeend", posterStyles);
+  // Inject styles into head
+  document.head.insertAdjacentHTML("beforeend", popupStyles);
 
-  // Insert HTML elements before .body_wrap (or at start if not present)
+  // Insert popup HTML
   const bodyWrap = document.querySelector(".body_wrap") || document.body;
-  bodyWrap.insertAdjacentHTML("beforebegin", posterElements);
+  bodyWrap.insertAdjacentHTML("beforeend", popupElements);
 
-  // --- Event Listeners ---
-  const openBtn = document.getElementById("openBtn");
+  // --- Event Listener for closing ---
   const overlay = document.getElementById("overlay");
   const closeBtn = document.getElementById("closeBtn");
 
-  openBtn.addEventListener("click", () => {
-    overlay.classList.add("active");
-  });
-
+  // Close popup when clicking button
   closeBtn.addEventListener("click", () => {
     overlay.classList.remove("active");
   });
 
+  // Also close if clicked outside image
   overlay.addEventListener("click", (e) => {
     if (e.target === overlay) {
       overlay.classList.remove("active");
