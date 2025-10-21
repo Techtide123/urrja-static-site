@@ -38,7 +38,7 @@
 
         .gallery-item img {
             width: 100%;
-            height: 100px;
+            height: 220px;
             /* fixed height as requested */
             object-fit: cover;
             transition: transform 0.3s ease;
@@ -134,14 +134,16 @@
                 <div class="row gallery-grid">
 
                     <!-- Campus Images -->
-                    <div class="col-lg-2 col-md-2 gallery-item events">
+                    <div class="col-lg-3 col-md-2 gallery-item events">
                         <div class="gallery-inner">
-                            <img src="assets/img/event/urjja_event/39.jpeg" alt="Campus View">
+                            <a href="assets/img/event/urjja_event/39.jpeg">
+                                <img src="assets/img/event/urjja_event/39.jpeg" alt="Campus View">
+                            </a>
                             <div class="gallery-caption">
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-2 col-md-2 gallery-item events">
+                    <div class="col-lg-3 col-md-2 gallery-item events">
                         <div class="gallery-inner">
                             <img src="assets/img/event/urjja_event/63.jpeg" alt="Campus Garden">
                             <div class="gallery-caption">
@@ -150,14 +152,14 @@
                     </div>
 
                     <!-- Events Images -->
-                    <div class="col-lg-2 col-md-2 gallery-item events">
+                    <div class="col-lg-3 col-md-2 gallery-item events">
                         <div class="gallery-inner">
                             <img src="assets/img/event/urjja_event/98.jpeg" alt="Annual Function">
                             <div class="gallery-caption">
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-2 col-md-2 gallery-item events">
+                    <div class="col-lg-3 col-md-2 gallery-item events">
                         <div class="gallery-inner">
                             <img src="assets/img/event/urjja_event/64.jpeg" alt="Sports Day">
                             <div class="gallery-caption">
@@ -691,9 +693,17 @@
                 $(this).addClass('active');
             });
 
-            // Initialize Magnific Popup for image zoom
-            $('.gallery-item').magnificPopup({
-                delegate: 'img',
+            // Wrap plain <img> thumbnails with <a href="..."> if not already wrapped
+            // This ensures Magnific Popup opens the full-size image from the href
+            $('.gallery-grid .gallery-inner img').each(function () {
+                if ($(this).parent('a').length === 0) {
+                    $(this).wrap('<a href="' + $(this).attr('src') + '"></a>');
+                }
+            });
+
+            // Initialize Magnific Popup for image zoom (delegate to anchors and images)
+            $('.gallery-grid').magnificPopup({
+                delegate: 'a, img',
                 type: 'image',
                 gallery: {
                     enabled: true
