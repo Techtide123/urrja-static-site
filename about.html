@@ -25,6 +25,121 @@
     <link rel="stylesheet" href="assets/css/main.css">
     <style>
         @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap");
+        @import url("https://fonts.googleapis.com/css?family=Open+Sans:300,700");
+        /* Variables */
+
+
+        body {
+            font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+            font-size: 1em;
+            font-weight: 300;
+            line-height: 1.5;
+            letter-spacing: 0.05em;
+        }
+
+        /* Layout */
+        * {
+            -moz-box-sizing: border-box;
+            -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+        }
+
+        /* Styling */
+        .timeline {
+            margin: 4em auto;
+            position: relative;
+            max-width: 60em;
+        }
+
+        .timeline:before {
+            background-color: black;
+            content: "";
+            margin-left: -1px;
+            position: absolute;
+            top: 0;
+            left: 2em;
+            width: 2px;
+            height: 100%;
+        }
+
+        .timeline-event {
+            position: relative;
+        }
+
+        .timeline-event:hover .timeline-event-icon {
+            -moz-transform: rotate(-45deg);
+            -ms-transform: rotate(-45deg);
+            -webkit-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+            background-color: #a83279;
+        }
+
+        .timeline-event:hover .timeline-event-thumbnail {
+            -moz-box-shadow: inset 40em 0 0 0 #a83279;
+            -webkit-box-shadow: inset 40em 0 0 0 #a83279;
+            box-shadow: inset 40em 0 0 0 #a83279;
+        }
+
+        .timeline-event-copy {
+            position: relative;
+            top: -1.875em;
+            left: 4em;
+            width: 80%;
+        }
+
+        .timeline-event-copy h3 {
+            font-size: 1.75em;
+        }
+
+        .timeline-event-copy h4 {
+            font-size: 1.2em;
+            margin-bottom: 1.2em;
+        }
+
+        .timeline-event-copy strong {
+            font-weight: 700;
+        }
+
+        .timeline-event-copy p:not(.timeline-event-thumbnail) {
+            padding-bottom: 1.2em;
+        }
+
+        .timeline-event-icon {
+            -moz-transition: -moz-transform 0.2s ease-in;
+            -o-transition: -o-transform 0.2s ease-in;
+            -webkit-transition: -webkit-transform 0.2s ease-in;
+            transition: transform 0.2s ease-in;
+            -moz-transform: rotate(45deg);
+            -ms-transform: rotate(45deg);
+            -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+            background-color: black;
+            outline: 10px solid white;
+            display: block;
+            margin: 0.5em 0.5em 0.5em -0.5em;
+            position: absolute;
+            top: 0;
+            left: 2em;
+            width: 1em;
+            height: 1em;
+        }
+
+        .timeline-event-thumbnail {
+            -moz-transition: box-shadow 0.5s ease-in 0.1s;
+            -o-transition: box-shadow 0.5s ease-in 0.1s;
+            -webkit-transition: box-shadow 0.5s ease-in;
+            -webkit-transition-delay: 0.1s;
+            transition: box-shadow 0.5s ease-in 0.1s;
+            color: white;
+            font-size: 0.75em;
+            background-color: black;
+            -moz-box-shadow: inset 0 0 0 0em #ef795a;
+            -webkit-box-shadow: inset 0 0 0 0em #ef795a;
+            box-shadow: inset 0 0 0 0em #ef795a;
+            display: inline-block;
+            margin-bottom: 1.2em;
+            padding: 0.25em 1em 0.2em 1em;
+        }
 
         .about-timeline {
             --color: rgba(30, 30, 30);
@@ -48,7 +163,7 @@
             grid-auto-columns: max-content;
             column-gap: var(--col-gap);
             list-style: none;
-            width: min(60rem, 90%);
+            /* width: min(60rem, 90%); */
             margin-inline: auto;
         }
 
@@ -277,7 +392,7 @@
                         <div class="col-lg-6">
                             <div class="hs-about_left mt-20">
                                 <div class="about-img wow skewIn">
-                                    <img src="assets/img/campus/campus-img02.png" alt="">
+                                    <img style="border-radius: 5px;" src="assets/img/event/urjja_event/39.jpeg" alt="">
                                 </div>
                             </div>
                         </div>
@@ -286,7 +401,7 @@
                                 data-wow-duration=".6s">
                                 <div class="section-title mb-20">
                                     <span class="sub-title">About Us</span>
-                                    <h1 class="title">Urja Academy – Skill Based Learning</h1>
+                                    <h1 class="title">Urja Academy – The Power of Possibility</h1>
 
                                     <p class="hs-content mt-25">
                                         Founded in 2015, URJA ACADEMY provides flexible, skill-based online programs
@@ -323,6 +438,102 @@
                     </div>
                 </div>
 
+            </section>
+            <!-- our history -->
+
+            <section class="history-section about-timeline pt-60 pb-60">
+                <div class="container">
+                    <div class="section-title text-center mb-30">
+                        <h2 class="title">Our Story – History & Background of URJA ACADEMY</h2>
+                    </div>
+
+                    <p class="lead text-center mb-40">Every great movement starts with a spark. For URJA ACADEMY, that
+                        spark was lit in 2015 with a simple but powerful belief: Education should not just inform — it
+                        should transform.</p>
+
+                    <ul class="timeline">
+                        <li class="timeline-event">
+                            <label class="timeline-event-icon"></label>
+                            <div class="timeline-event-copy">
+                                <p class="timeline-event-thumbnail">Founding</p>
+                                <h3>How We Began</h3>
+                                <p>What began as a small B.Ed. counselling initiative for aspiring teachers quickly
+                                    evolved into a hub of opportunity — a place where learners prepare for competitive
+                                    exams, gain career guidance, and find pathways to top universities in India and
+                                    abroad.</p>
+                            </div>
+                        </li>
+
+                        <li class="timeline-event">
+                            <label class="timeline-event-icon"></label>
+                            <div class="timeline-event-copy">
+                                <p class="timeline-event-thumbnail">2015</p>
+                                <h3>Started with B.Ed. counselling</h3>
+                                <p>Started with B.Ed. counselling, helping aspiring teachers choose the right path and
+                                    laying the foundation for a student-first approach.</p>
+                            </div>
+                        </li>
+
+                        <li class="timeline-event">
+                            <label class="timeline-event-icon"></label>
+                            <div class="timeline-event-copy">
+                                <p class="timeline-event-thumbnail">2017</p>
+                                <h3>Expanded into competitive coaching</h3>
+                                <p>Expanded into competitive coaching — OSSTET, CTET, OTET — achieving high student
+                                    success rates through focused mentoring and exam-oriented training.</p>
+                            </div>
+                        </li>
+
+                        <li class="timeline-event">
+                            <label class="timeline-event-icon"></label>
+                            <div class="timeline-event-copy">
+                                <p class="timeline-event-thumbnail">2020</p>
+                                <h3>Took a digital leap</h3>
+                                <p>Launched online programs so learners could join from anywhere, increasing
+                                    accessibility and flexibility for students across regions.</p>
+                            </div>
+                        </li>
+
+                        <li class="timeline-event">
+                            <label class="timeline-event-icon"></label>
+                            <div class="timeline-event-copy">
+                                <p class="timeline-event-thumbnail">2023</p>
+                                <h3>Partnered with universities</h3>
+                                <p>Partnered with universities across India and abroad, opening global opportunities and
+                                    pathways for higher education for our students.</p>
+                            </div>
+                        </li>
+
+                        <li class="timeline-event">
+                            <label class="timeline-event-icon"></label>
+                            <div class="timeline-event-copy">
+                                <p class="timeline-event-thumbnail">Today</p>
+                                <h3>Where we are now</h3>
+                                <p>Today: We are a trusted education and counselling ecosystem, guiding students at
+                                    every stage — from entrance exams to career placement.</p>
+                            </div>
+                        </li>
+
+                        <li class="timeline-event">
+                            <label class="timeline-event-icon"></label>
+                            <div class="timeline-event-copy">
+                                <p class="timeline-event-thumbnail">Our Values</p>
+                                <h3>What We Stand For</h3>
+                                <p><strong>Confidence</strong> – so learners feel ready for the real world.<br>
+                                    <strong>Clarity</strong> – so every decision, from B.Ed. admission to university
+                                    choice, is the right one.<br>
+                                    <strong>Care</strong> – because we believe in mentorship that sees the person behind
+                                    the student.
+                                </p>
+                            </div>
+                        </li>
+                    </ul>
+                    <b class="text-center pl-10">Our story is still being written — and every student who walks
+                        through our
+                        doors
+                        becomes part of it. Together, we are building a future where education is
+                        empowering, opportunity is accessible, and success is within everyone’s reach.</b>
+                </div>
             </section>
             <!-- feature + about section end  -->
             <section class="cta" id="explore">
@@ -503,13 +714,18 @@
             <!-- about end -->
 
             <!-- mission vision start -->
-            <section class="mission-vission z-1 pos-rel pt-30 pb-120" id="mission-vission">
+            <section class="mission-vission z-1 pos-rel pt-70 pb-130">
                 <div class="mission-vission-bg" data-background="assets/img/bg/vm_bg.jpg"></div>
                 <div class="container">
                     <div class="row justify-content-center">
                         <div class="col-lg-8">
                             <div class="section-title text-center mb-65">
                                 <h2 class="title mb-15">our mission and vision</h2>
+                                <p style="text-align: center;">Mission is to empower individuals through high-quality
+                                    institution — we are a launchpad for dreams.
+                                    Our vision is to become India’s most trusted education and counselling hub,
+                                    recognised globally for shaping futures with care, integrity, and excellence.
+                                </p>
                             </div>
                         </div>
                     </div>
@@ -517,23 +733,26 @@
                         <div class="col-lg-6 mt-30">
                             <div class="mission-vission-item">
                                 <h3 class="xb-item--title">Our Mission</h3>
-                                <p class="xb-item--content" style="text-align: justify;">URJA ACADEMY empowers learners
-                                    through transformative,
-                                    skill-based education, fostering excellence, innovation, and real-world impact.</p>
-                                <h4 class="xb-item--subtitle">With urja acadamy, you can:</h4>
+                                <p class="xb-item--content">At URJA ACADEMY, our mission is to be more than an
+                                    institution — we are a launchpad for dreams.
+                                    We exist to empower students, educators, and professionals by providing:</p>
+                                <h4 class="xb-item--subtitle">With URJA ACADEMY, you can:</h4>
                                 <ul class="xb-item--list list-unstyled">
-                                    <li><span><img src="assets/img/icon/check.svg" alt=""></span>Connect with a
-                                        community of passionate learners.</li>
-                                    <li><span><img src="assets/img/icon/check.svg" alt=""></span>Grow through
-                                        practical, industry-relevant training.</li>
-                                    <li><span><img src="assets/img/icon/check.svg" alt=""></span>Embrace lifelong
-                                        learning and adaptability.</li>
-                                    <li><span><img src="assets/img/icon/check.svg" alt=""></span>Experience
-                                        high-quality, accessible education.</li>
-                                    <li><span><img src="assets/img/icon/check.svg" alt=""></span>Develop critical
+                                    <li><span><img src="assets/img/icon/check.svg" alt=""></span>Expert B.Ed.
+                                        counselling, guiding aspiring teachers toward the right career path.</li>
+                                    <li><span><img src="assets/img/icon/check.svg" alt=""></span>Competitive exam
+                                        preparation and personalised coaching for OSSTET, CTET, OTET, and other key
+                                        examinations.</li>
+                                    <li><span><img src="assets/img/icon/check.svg" alt=""></span>University enrolment
+                                        support, connecting learners to leading colleges and universities in India and
+                                        abroad.</li>
+                                    <li><span><img src="assets/img/icon/check.svg" alt=""></span>Our goal is to create a
+                                        complete ecosystem where learners are guided, trained, and supported from their
+                                        first step in education to their ultimate career destination.</li>
+                                    <!-- <li><span><img src="assets/img/icon/check.svg" alt=""></span>Develop critical
                                         thinking and leadership skills.</li>
                                     <li><span><img src="assets/img/icon/check.svg" alt=""></span>Learn in an inclusive
-                                        online environment.</li>
+                                        online environment.</li> -->
                                 </ul>
                                 <div class="xb-item--shape">
                                     <div class="shape shape--1">
@@ -548,24 +767,29 @@
                         <div class="col-lg-6 mt-30">
                             <div class="mission-vission-item">
                                 <h3 class="xb-item--title">Our Vision</h3>
-                                <p class="xb-item--content" style="text-align: justify;">URJA ACADEMY envisions becoming
-                                    a leading platform in
-                                    skill-based online learning, driving innovation and preparing learners for success
-                                    in a fast-evolving world.</p>
-                                <h4 class="xb-item--subtitle">With URJA ACADEMY, you can:</h4>
+                                <p class="xb-item--content">Our vision is to become India’s most trusted education and
+                                    counselling hub, recognised globally for shaping futures with care, integrity, and
+                                    excellence.
+                                </p>
+                                <h4 class="xb-item--subtitle">With URJA ACADEMY, aspire to:</h4>
                                 <ul class="xb-item--list list-unstyled">
-                                    <li><span><img src="assets/img/icon/check.svg" alt=""></span>Lead through practical,
-                                        real-world skills.</li>
-                                    <li><span><img src="assets/img/icon/check.svg" alt=""></span>Adopt innovative online
-                                        learning methods.</li>
-                                    <li><span><img src="assets/img/icon/check.svg" alt=""></span>Stay ahead with
-                                        future-ready training.</li>
-                                    <li><span><img src="assets/img/icon/check.svg" alt=""></span>Thrive in a diverse and
-                                        digital environment.</li>
-                                    <li><span><img src="assets/img/icon/check.svg" alt=""></span>Collaborate with
+                                    <li><span><img src="assets/img/icon/check.svg" alt=""></span>Be the go-to
+                                        destination for B.Ed. aspirants and competitive exam candidates seeking quality
+                                        coaching and guidance.
+                                    </li>
+                                    <li><span><img src="assets/img/icon/check.svg" alt=""></span>Build a network of top
+                                        Indian and international universities to open global doors for our students.
+                                    </li>
+                                    <li><span><img src="assets/img/icon/check.svg" alt=""></span>Create a platform where
+                                        personalised mentorship and future-focused training go hand-in-hand.</li>
+                                    <li><span><img src="assets/img/icon/check.svg" alt=""></span>Inspire learners to
+                                        become leaders, innovators, and contributors in society, equipped with both
+                                        knowledge and character.</li>
+                                    <!-- <li><span><img src="assets/img/icon/check.svg" alt=""></span>Collaborate with
                                         industry experts and mentors.</li>
                                     <li><span><img src="assets/img/icon/check.svg" alt=""></span>Adapt to the changing
-                                        professional landscape.</li>
+                                        professional landscape.</li> -->
+                                    <br>
                                 </ul>
                                 <div class="xb-item--shape">
                                     <div class="shape shape--1">
@@ -577,7 +801,6 @@
                                 </div>
                             </div>
                         </div>
-
 
                     </div>
                 </div>
@@ -830,23 +1053,42 @@
                         <div class="col-xl-6 col-lg-6 mt-30 order-2 order-lg-1">
                             <div class="section-title section-title--md">
                                 <span class="sub-title">Our Director</span>
-                                <h2 class="title mb-20">N. Santosh Ku. Reddy </h2><i
+                                <h2 class="title mb-20">N.Santosh Kumar Reddy </h2><i
                                     style="padding-left:10px ; color: #ecb726;;">MA(Eng
                                     ), M.ED, MBA</i><br>
-                                <p style="text-align: justify;">The basic motto of this counselling centre /Institute is
-                                    to instill and inculcate
-                                    morality and
-                                    ethical
-                                    values among the budding teacher trainee's vis a vis imparting qualitative intrinsic
-                                    knowledge and
-                                    Wisdom to become the dynamic leaders and noble citizens of the world.
-                                    In true sense of term, Education paves the way for tremendous holistic and
-                                    harmonious development by
-                                    modifying the attitude and behaviour of the learners keeping in views of complexity
-                                    scenario in the
-                                    world.
-                                    Lastly I anticipate a brilliant and bright career of our learned students for their
-                                    future
+                                <p style="text-align: justify;">
+                                    Founded in 2015, URJA ACADEMY has become a trusted destination for students,
+                                    educators, and aspirants who want to turn their ambitions into achievements.
+                                    <br>
+                                    • We proudly serve as one of the region’s most respected B.Ed., M.Ed. & B.P.Ed.
+                                    Counselling Centres, guiding aspiring teachers to the right programs and
+                                    universities with expert advice. Over the years, we have expanded our mission to
+                                    include:
+                                    <br>
+                                    • Competitive Exam Coaching: Specialised training/ coaching for B.Ed Entrance
+                                    OSSTET,
+                                    CTET, OTET, OAVS, KVS, Junior Teacher, and other teaching eligibility tests — with
+                                    outstanding success rates.
+                                    <br>
+                                    • University Admission Guidance: Helping students secure seats in top universities
+                                    across India and abroad, shaping their academic and professional futures.
+                                    <br>
+                                    • Quality Resources: Well-structured notes, targeted study materials, and
+                                    personalised
+                                    mentorship trusted by thousands of learners.
+                                    <br>
+                                    <br>
+                                    What makes URJA ACADEMY stand out is our commitment to
+                                    excellence — we blend experienced faculty, modern teaching methods, and a
+                                    student-first approach to ensure every learner gets the direction and confidence
+                                    they need to succeed.
+
+                                    This calendar is more than dates; it is a celebration of our achievers and a
+                                    reminder that with the right guidance, your name can be next.
+                                    <br>
+                                    📢 Join URJA ACADEMY today — where learning meets opportunity and dreams turn into
+                                    success stories.
+                                    <br>
                                     <br>
                                     I wish you all a very bright future.
                                 </p>
@@ -866,6 +1108,66 @@
                             <div class="cta-image text-center">
                                 <img src="assets/img/event/Picnic/Director.png" style="border-radius: 10px;"
                                     alt="Director">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-xl-6 col-lg-6 mt-30 order-2 order-lg-1">
+                            <div class="section-title section-title--md">
+                                <span class="sub-title">Our Educationist cum Adviser</span>
+                                <h2 class="title mb-20">Dr. Ajaya Kumar Behera </h2>
+                                <!-- <i
+                                    style="padding-left:10px ; color: #ecb726;;">MA(Eng
+                                    ), M.ED, MBA</i><br> -->
+                                <p style="text-align: justify;">Welcome to URJA ACADEMY – a place where education is
+                                    not just delivered but experienced as a journey of transformation.
+                                    <br>As the Adviser
+                                    of URJA ACADEMY, I am deeply proud of the role our institution plays in shaping the
+                                    future of aspiring educators, competitive exam candidates, and global learners.
+                                    Education today is no longer about memorising facts — it is about building skills,
+                                    confidence, and purpose that allow individuals to thrive in a rapidly changing
+                                    world.
+                                    <br>At URJA ACADEMY, we are committed to:
+                                    <br>• Guiding B.Ed. aspirants with
+                                    accurate counselling so they choose the right pathway into teaching.
+                                    <br>• Providing
+                                    comprehensive coaching for OSSTET, CTET, OTET, and other competitive examinations
+                                    that open doors to rewarding careers.
+                                    <br>• Connecting students with top universities in
+                                    India and abroad, enabling them to pursue degrees and professional courses that
+                                    match their dreams.
+                                    <br>What sets us apart is not just the quality of our teaching but
+                                    the care and mentorship we offer. We believe every learner is unique, and we work
+                                    tirelessly to provide personalised guidance, curated resources, and future-ready
+                                    training that prepare them for success in real-world scenarios.
+                                    <br>As you explore our
+                                    website, I encourage you to see URJA ACADEMY not only as an institution, but as a
+                                    partner in your growth journey. Whether you are preparing for a competitive exam,
+                                    seeking admission guidance, or looking to upgrade your skills, we are here to walk
+                                    beside you, every step of the way.
+                                    <br>Let us learn, grow, and lead together — because
+                                    at URJA ACADEMY, your success is our mission, and your future is our vision.
+                                    <br>
+                                    <br>
+                                    I wish you all a very bright future.
+                                </p>
+                            </div>
+                            <div class="admission-btn mt-40">
+                                <a class="thm-btn" href="contact.html">talk to an me
+                                    <span class="icon"><svg width="21" height="21" viewBox="0 0 21 21" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M10.4795 21C9.10959 21 7.81507 20.7539 6.59589 20.2617C5.37671 19.7695 4.30137 19.0962 3.36986 18.2417C2.43836 17.3872 1.67808 16.3857 1.08904 15.2373C0.486301 14.0752 0.123288 12.8311 0 11.5049V11.4639H8.56849V14.3145C8.56849 14.5742 8.66096 14.7998 8.84589 14.9912C9.03082 15.1826 9.25342 15.2783 9.5137 15.2783C9.65068 15.2783 9.7774 15.251 9.89384 15.1963C10.0103 15.1416 10.1096 15.0732 10.1918 14.9912L14.0137 11.1768C14.0959 11.0947 14.1644 10.9956 14.2192 10.8794C14.274 10.7632 14.3014 10.6367 14.3014 10.5C14.3014 10.3633 14.274 10.2368 14.2192 10.1206C14.1644 10.0044 14.0959 9.90527 14.0137 9.82324L10.1918 6.00879C10.1096 5.92676 10.0103 5.8584 9.89384 5.80371C9.7774 5.74902 9.65068 5.72168 9.5137 5.72168C9.25342 5.72168 9.0274 5.81738 8.83562 6.00879C8.64384 6.2002 8.54794 6.42578 8.54794 6.68555V9.53613H0C0.123288 8.19629 0.486301 6.94531 1.08904 5.7832C1.67808 4.62109 2.44178 3.61279 3.38014 2.7583C4.31849 1.90381 5.39041 1.23047 6.59589 0.738281C7.81507 0.246094 9.10959 0 10.4795 0C11.9315 0 13.2945 0.273439 14.5685 0.820312C15.8425 1.38086 16.9555 2.13623 17.9075 3.08643C18.8596 4.03662 19.6096 5.14746 20.1575 6.41895C20.7192 7.69043 21 9.05078 21 10.5C21 11.9492 20.7192 13.3096 20.1575 14.5811C19.6096 15.8662 18.8596 16.9839 17.9075 17.9341C16.9555 18.8843 15.8425 19.6328 14.5685 20.1797C13.2945 20.7266 11.9315 21 10.4795 21Z"
+                                                fill="#170006"></path>
+                                        </svg></span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-xl-5 offset-xl-1 col-lg-6 mt-30 order-1 order-lg-2">
+                            <div class="cta-image text-center">
+                                <img src="assets/img/team/adviser.png" style="border-radius: 10px;" alt="Director">
                             </div>
                         </div>
                     </div>

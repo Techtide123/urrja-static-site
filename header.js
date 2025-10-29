@@ -15,10 +15,11 @@ document.write(`
             box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
             cursor: pointer;
             transition: all 0.2s ease;
+            margin:25px 60px
         }
 
         .btn:hover:not(:disabled) {
-            background: #f3f4f6;
+            background: #df2822ff;
             color: #000;
         }
 
@@ -57,7 +58,7 @@ document.write(`
                             <p>Help Desk : <span style="font-size: 14px;">+91 8328888962</span></p>
                         </div>
                         <div class="xb-info">
-                            <p>Location : <span style="font-size: 14px;">Ram Nagar,Brahmapur, Odisha , 760005 </span>
+                            <p>Location : <span style="font-size: 14px;">Anant nagar 1st line extension ,Ram Nagar,Brahmapur, Odisha , 760005 </span>
                             </p>
                         </div>
                     </div>
@@ -140,6 +141,7 @@ document.write(`
                                         <a href="contact.html">Contact</a>
                                     </li>
                                 </ul>
+                                
                             </nav>
                             <div class="xb-header-wrap">
                                 <div class="xb-header-menu">
@@ -194,6 +196,7 @@ document.write(`
                                                 <li class="menu-item">
                                                     <a href="contact.html">Contact</a>
                                                 </li>
+                                                <a href="https://urrja-accademi.vercel.app/admin/login" class="btn">Admin</a>
                                             </ul>
                                         </nav>
                                     </div>
@@ -214,7 +217,6 @@ document.write(`
                                     Admin Panel
                                 </button>
                             </a>
-
                         </div>
                         <div class="header-bar-mobile side-menu d-lg-none">
                             <a class="xb-nav-mobile" href="javascript:void(0);"><i class="fal fa-bars"></i></a>
