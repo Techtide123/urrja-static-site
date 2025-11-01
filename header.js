@@ -58,7 +58,7 @@ document.write(`
                             <p>Help Desk : <span style="font-size: 14px;">+91 8328888962</span></p>
                         </div>
                         <div class="xb-info">
-                            <p>Location : <span style="font-size: 14px;">Anant nagar 1st line extension ,Ram Nagar,Brahmapur, Odisha , 760005 </span>
+                            <p>Location : <span style="font-size: 14px;">Anant nagar 1st Lane extension, Brahmapur, Odisha , 760005 </span>
                             </p>
                         </div>
                     </div>
