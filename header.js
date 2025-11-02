@@ -103,8 +103,8 @@ document.write(`
                                             <li><a href="academic.html#result">Results</a></li>
                                         </ul>
                                     </li>
-                                    <li><a href="https://urrja-accademi.vercel.app/admission">Admission</a></li>
-                                    <li><a href="https://urrja-accademi.vercel.app/notes">Notes</a></li>
+                                    <li><a href="https://admin.urjaacademy.org/admission">Admission</a></li>
+                                    <li><a href="https://admin.urjaacademy.org/notes">Notes</a></li>
                                     <li class="menu-item-has-children">
                                         <a href="gallery.html">Gallery</a>
                                         <ul class="submenu">
@@ -183,9 +183,9 @@ document.write(`
                                                         <li><a href="academic.html#teams">Results</a></li>
                                                     </ul>
                                                 </li>
-                                                <li><a href="https://urrja-accademi.vercel.app/admission">Admission</a>
+                                                <li><a href="https://admin.urjaacademy.org/admission">Admission</a>
                                                 </li>
-                                                <li><a href="https://urrja-accademi.vercel.app/notes">Notes</a></li>
+                                                <li><a href="https://admin.urjaacademy.org/notes">Notes</a></li>
                                                 <li class="menu-item menu-item-has-children">
                                                     <a href="gallery.html">Gallery</a>
                                                     <ul class="sub-menu">
@@ -196,7 +196,7 @@ document.write(`
                                                 <li class="menu-item">
                                                     <a href="contact.html">Contact</a>
                                                 </li>
-                                                <a href="https://urrja-accademi.vercel.app/admin/login" class="btn">Admin</a>
+                                                <a href="https://admin.urjaacademy.org/admin/login" class="btn">Admin</a>
                                             </ul>
                                         </nav>
                                     </div>
