@@ -95,10 +95,10 @@ document.write(`
                 <div class="footer-bottom  ">
                     <div class="copyright text-center"
                         style="display: flex;justify-content: space-around;align-items: center; ">
-                        <p>Copyright © 2025 <a href="index.html">Urja Acadamy</a>|| All rights reserved.</p>
+                        <p>Copyright © 2025 <a href="index.html">Urja Academy</a>|| All rights reserved.</p>
                         <p>Powerd by <a href="https://tripstar.co.in"><img
                                     src="https://tripstar.co.in/assets/my-img/logo.png" alt=""
-                                    style="height: 70px; width: 70px;object-fit: contain;"></a></p>
+                                    style="height: 80px; width: 80px;object-fit: contain;"></a></p>
                     </div>
 
                 </div>
@@ -110,7 +110,7 @@ document.write(`
                     url: u,
                     options: {
                         waId: "+91 8328888962",
-                        siteName: "Urja Acadamy",
+                        siteName: "Urja Academy",
                         siteTag: "Available",
                         siteLogo: "https://i.postimg.cc/fTc8zMf2/preloader.png",
                         widgetPosition: "LEFT",
